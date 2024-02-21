@@ -12,7 +12,7 @@ console.log('Nome: ' + nome + ' - Idade: ' + idade + ' anos');
 console.log(`Nome: ${nome}  - Idade: ${idade} anos`);
 
 
-
+//Determinando valor Verdadeiro ou Falso para variavel
 let trabalha = true;
 
 console.log(trabalha);
@@ -32,7 +32,7 @@ idade = 3600;
 console.log(idade);
 
 
-
+//Dados de endereço
 let endereco = {
     'rua' : 'Perolas',
     'num' : 15,
@@ -45,6 +45,7 @@ console.log(endereco);
 
 let frutas = ['Banana', 'Mamão', 'Maça'];
 
+//typeof - determinar o tipo de um valor
 console.log(
     'vNome: ' + typeof(nome) + '\n' + 
     'vIdade: ' + typeof(idade) + '\n' + 
@@ -62,3 +63,5 @@ let velha = [
 ]
 
 console.log(velha [2][2]);
+console.log(typeof(velha));
+console.log((Array.isArray(velha)) ? 'Array' : 'Não é Array');

@@ -4,17 +4,24 @@
   "description": "Introdução NodeJS e revisão JavaScript",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bruno2345324/introducao_node.git"
   },
-  "keywords": ["NodeJS", "Inntrodução"],
+  "keywords": [
+    "NodeJS",
+    "Inntrodução"
+  ],
   "author": "Bruno",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Bruno2345324/introducao_node/issues"
   },
-  "homepage": "https://github.com/Bruno2345324/introducao_node#readme"
+  "homepage": "https://github.com/Bruno2345324/introducao_node#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
