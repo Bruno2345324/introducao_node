@@ -4,7 +4,8 @@ let entrada = require('prompt-sync')();
 let nome
 
 //Fazendo uma pergunta/Interagindo com o sistema ----- node aula_entrada.js (comando para executar)
-entrada('Digite seu nome: ');
-entrada('Digite sua idade: ');
+nome = entrada('Digite seu nome:');
 
 console.log(`Seu nome é ${nome}`);
+
+entrada ('Pressione enter para encerrar!');
