@@ -48,16 +48,49 @@ console.log ('Sua idade é ${idade}');
 // -------------------------------------------------------------------------------------------------------------------------
 
 //senha - FORMA 1
-let entrada = require('prompt-sync')();
-const senha = '123456';
-do {
-    var senhaDig = entrada('Digite a senha para acessar o sistema:');
-}   while (senha ==! senhaDig);
+//criando validador de senha com maximo de 3 tentativas
+// let entrada = require('prompt-sync')();
+// const senha = '123456';
+// let = cont = 0 //contador
+// do {
+//     if (cont ===3){
+//         break;
+//     } //fechando sistema após 3 tentativas
+//     cont++; //somando um número a cada tentativa
+//     var senhaDig = entrada('Digite a senha para acessar o sistema:');
+// }   while (senhaDig !== senha);
 
-// //senha FORMA 2
+// if (cont >= 3){
+//     console.log('Acesso não autorizado!');
+// } else{
+//     console.log('Acesso autorizado!');
+// }
+
+
+//senha FORMA 2
 // let sn = '123456';
 // let snDg = entrada('Digite a senha para acessar o sistema:');
 
-// while (sn ==! snDg){
+// while (sn !== snDg){
 //     snDg = entrada('Digite a senha para acessar o sistema:');
-//}
+// }
+
+
+
+let entrada = require('prompt-sync')();
+const senha = '123456';
+let cont = 0
+for (let cont = 0; cont <= 2; cont++){
+    var senhaDig = entrada('Digite a senha:');
+if (senhaDig === senha){
+    console.log('Acesso não autorizado!');
+    break
+} else{
+    console.log('Acesso autorizado!');
+}
+}
+
+// for (let cont = 1; cont <= 10; cont++){
+//     let calc = num * cont;
+//     console.log (`${num} X ${cont} = ${calc}`);
+// }
