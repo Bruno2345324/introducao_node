@@ -76,21 +76,30 @@ console.log ('Sua idade é ${idade}');
 // }
 
 
-
-let entrada = require('prompt-sync')();
-const senha = '123456';
-let cont = 0
-for (let cont = 0; cont <= 2; cont++){
-    var senhaDig = entrada('Digite a senha:');
-if (senhaDig === senha){
-    console.log('Acesso não autorizado!');
-    break
-} else{
-    console.log('Acesso autorizado!');
-}
-}
-
-// for (let cont = 1; cont <= 10; cont++){
-//     let calc = num * cont;
-//     console.log (`${num} X ${cont} = ${calc}`);
+// EXERCICIO SENHA UTILIZANDO FOR
+// let entrada = require('prompt-sync')();
+// const senha = '123456';
+// let cont = 0
+// for (let cont = 0; cont <= 2; cont++){
+//     var senhaDig = entrada('Digite a senha:');
+// if (senhaDig === senha){
+//     console.log('Acesso autorizado!');
+//     break
+// } else{
+//     console.log('Acesso não autorizado!');
 // }
+// }
+
+// CORREÇÃO, METODO DO PROFESSOR
+let entrada = require('prompt-sync')();
+let senha = '123456';
+let snCorreta = false;
+
+for (let index = 1; index <=3; index++) {
+    const snDg = entrada ('Digite sua senha:');
+    if (senha === snDg){
+        snCorreta = true;
+        break;    
+}
+}
+console.log(snCorreta ? 'Acesso autorizado' : 'Acesso negado')
