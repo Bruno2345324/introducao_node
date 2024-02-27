@@ -36,11 +36,28 @@ console.log ('Sua idade é ${idade}');
 //     cont++;
 // }
 
-//TABUADA - FOPRMA 2 abreviada
-let entrada = require('prompt-sync')();
-let num = parseInt(entrada('Digite um número para visualizar a tabuada:'))
+//TABUADA - FORMA 2 abreviada
+// let entrada = require('prompt-sync')();
+// let num = parseInt(entrada('Digite um número para visualizar a tabuada:'))
 
-for (let cont = 1; cont <= 10; cont++){
-    let calc = num * cont;
-    console.log (`${num} X ${cont} = ${calc}`);
-}
+// for (let cont = 1; cont <= 10; cont++){
+//     let calc = num * cont;
+//     console.log (`${num} X ${cont} = ${calc}`);
+// }
+
+// -------------------------------------------------------------------------------------------------------------------------
+
+//senha - FORMA 1
+let entrada = require('prompt-sync')();
+const senha = '123456';
+do {
+    var senhaDig = entrada('Digite a senha para acessar o sistema:');
+}   while (senha ==! senhaDig);
+
+// //senha FORMA 2
+// let sn = '123456';
+// let snDg = entrada('Digite a senha para acessar o sistema:');
+
+// while (sn ==! snDg){
+//     snDg = entrada('Digite a senha para acessar o sistema:');
+//}
